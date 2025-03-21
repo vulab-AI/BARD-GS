@@ -200,160 +200,124 @@
 </section>
 <!-- End pipeline overview -->
 
-<section class="hero is-small">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <h2 class="title">Results on Deblurring</h2>
-            <div id="results-carousel" class="carousel results-carousel">
-                <div class="item rounded-0 border-0 item-1">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_1_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/1_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-2">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_2_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/2_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-3">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_3_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/3_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-4">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_4_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/4_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-7">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_7_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/7_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-9">
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/ori_9_spiral_050000_rgb.mp4" type="video/mp4">
-                  </video>
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/9_removed_gs.mp4" type="video/mp4">
-                  </video>
-              </div>
-                <div class="item rounded-0 border-0 item-10">
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/ori_10_spiral_050000_rgb.mp4" type="video/mp4">
-                  </video>
-                  <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                      <source src="static/videos/10_removed_gs.mp4" type="video/mp4">
-                  </video>
-              </div>
-                <div class="item rounded-0 border-0 item-12">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/12_ori.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/12_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-book">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_book_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/book_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="item rounded-0 border-0 item-trash">
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/ori_trash_spiral_050000_rgb.mp4" type="video/mp4">
-                    </video>
-                    <video poster="" autoplay muted loop preload="none" class="w-auto" style="height:22vh;">
-                        <source src="static/videos/trash_removed_gs.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Results on Deblurring</h2>
+      </div>
+      <div class="content has-text-justified">
+        <p class="content">Here we demonstrate the performance of BARD-GS in the deblurring task compared to baseline methods. Since Deformable 3D Gaussian (D3DGS) and 4DGS are not inherently designed to handle motion blur, we apply a per-frame image deblurring method, MPRNet, as preprocessing for these methods. As illustrated, BARD-GS achieves notably superior results in <b><font color="#f03a17">dynamic regions</font></b>, such as the <b><font color="#209cee">cat's face</font></b> and the <b><font color="#209cee">spinning paper windmill</font></b>. </p>
+      </div>
+      <div class="columns is-centered">
+        <div class="column content has-text-centered">
+            <h2 class="title is-6">D3DGS + MPRNet</h2>
+            <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+            <source src="./static/videos/sriracha_D3DGS+MPR.mp4" type="video/mp4">
+            </video>
+            <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+            <source src="./static/videos/paperwindmill_D3DGS+MPR.mp4" type="video/mp4">
+            </video>
         </div>
-    </div>
-</section>
-<br/>
 
-<section class="hero teaser">
-    <div class="container is-max-desktop has-text-centered shadow-sm">
-        <br/>
-        <h2 class="title">Results on Novel View Synthesis</h2>
-        <div class="row">
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/ori_3_spiral_050000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/3_lpips_True_prepare_False_010000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/3_nerfiller.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/3_removed_gs.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
+        <div class="column content has-text-centered">
+          <h2 class="title is-6">4DGS+MPRNet</h2>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/sriracha_4dgs+mpr.mp4" type="video/mp4">
+          </video>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/paperwindmill_4dgs+mpr.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/ori_book_spiral_050000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">Original Scene</h5>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/book_lpips_True_prepare_False_010000_rgb.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">SPIn-NeRF</h5>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/book_nerfiller.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">NeRFiller</h5>
-            </div>
-            <div class="col-3">
-                <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
-                    <source src="static/videos/book_removed_gs.mp4"
-                            type="video/mp4">
-                </video>
-                <h5 class="subtitle">Ours</h5>
-            </div>
+
+        <div class="column content has-text-centered">
+          <h2 class="title is-6">DyBluRF</h2>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/sriracha_dyblurf.mp4" type="video/mp4">
+          </video>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/paperwindmill_dyblurf.mp4" type="video/mp4">
+          </video>
         </div>
+
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content has-text-centered">
+                <h2 class="title is-6">BARD-GS (Ours)</h2>
+                <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+                <source src="./static/videos/sriracha_ours.mp4" type="video/mp4">
+                </video>
+                <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+                <source src="./static/videos/paper_windmill_ours.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
 </section>
-<br/>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Results on Novel View Synthesis</h2>
+      </div>
+      <div class="content has-text-justified">
+        <p class="content">In this section, we evaluate the performance of BARD-GS on the novel view synthesis task using our proposed real-world blurry dataset. Due to the significantly more severe motion blur present in our dataset compared to synthesized datasets, image deblurring methods such as MPRNet may struggle or fail, leading to poor reconstruction quality in both static and dynamic regions.</p>
+      </div>
+      <div class="columns is-centered">
+        <div class="column content has-text-centered">
+            <h2 class="title is-6">D3DGS + MPRNet</h2>
+            <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+            <source src="./static/videos/windmill_D3DGS+MPR.mp4" type="video/mp4">
+            </video>
+            <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+            <source src="./static/videos/card_D3DGS+MPR.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="column content has-text-centered">
+          <h2 class="title is-6">4DGS + MPRNet</h2>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/windmill_4dgs+mpr.mp4" type="video/mp4">
+          </video>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/card_4dgs+mpr.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column content has-text-centered">
+          <h2 class="title is-6">DyBluRF</h2>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/windmill_dyblurf.mp4" type="video/mp4">
+          </video>
+          <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+          <source src="./static/videos/card_dyblurf.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content has-text-centered">
+                <h2 class="title is-6">BARD-GS (Ours)</h2>
+                <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+                <source src="./static/videos/windmill_ours.mp4" type="video/mp4">
+                </video>
+                <video autoplay="" muted="" loop="" playsinline="" height="100%" class="other-video">
+                <source src="./static/videos/card_ours.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 <section class="hero is-light">
   <div class="hero-body">
